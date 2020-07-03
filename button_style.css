@@ -1,0 +1,25 @@
+.read_more {
+    text-align: center;
+}
+
+
+.read_more button {
+
+    background-color: teal;
+    text-align: center;
+    margin-top: 360px;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    color: whitesmoke;
+    width: 250px;
+    height: 60px;
+    border-radius: 12px;
+    border: 5px solid blanchedalmond; 
+}
+
+button:hover {
+    color: blanchedalmond;
+    transition: 1s ease-in-out;
+}
