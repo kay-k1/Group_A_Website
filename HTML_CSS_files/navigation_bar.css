@@ -56,9 +56,7 @@ nav ul li:hover {
     border-radius:10px;
 }
 
-/* The media query is used so that the navigation menu has responsive design so that it
-is accessible on different devices, for e.g. to users who want to access the website through 
-their mobile phone. */
+/* The media query is used so that the navigation menu has a responsive design. */
 
 @media only screen and (max-width:1000px) {
 
