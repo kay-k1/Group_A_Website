@@ -1,0 +1,87 @@
+<!--The HTML code on this page is all the HTML for the about page of the website.-->
+
+<!--The first part of the skeleton of the HTML is the head, within the head tags is the title of the web page and the links to the corresponding CSS pages for styling the web page.-->
+<!--The viewport meta tag is used to control layout on mobile browsers.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="navigation_bar.css">
+    <link rel="stylesheet" href="About_Page.css">
+    
+</head>
+
+<!--Inside the body tags is the all the HTML for the navigation menu and information describing the contents of the website.-->  
+<!--The nav tags are for the navigation menu which is placed at the top of the web page.-->
+<!--Inside the nav tags are the li tags representing the items in the list.-->
+<!--Inside the li tags are the a tags so that when users of the website click About for e.g. they will be directed to About_Page.html which is the HTML web page for the About page of the website.-->
+<!--In this HTML webpage the li tag containing About is given class="active" in the a tag, this is styled in navigation_bar.css and is for About to remain highlighted so that users know that they are currently on the About page.-->
+
+<body>
+    
+    <nav>
+        
+        <ul>
+  		<li><a href="index.html">Home</a></li>
+  		<li><a class='active'href="About_Page.html">About</a></li>
+  		<li><a href="Statistics.html">Statistics</a></li>
+  		<li><a href="Databases.html">Databases</a></li>
+                <li><a href="Variant.html">D614G Variant</a></li>
+  		<li><a href="sequence.html">Sequence Viewer</a></li>
+  		<li><a href="protein.html">Protein Viewer</a></li>
+  		<li><a href="references.html">Information Sources</a></li>
+  	</ul>
+  </nav>
+
+<!--A div tag with class box-area contians the other div tags img-area, img-text and header-text, the contents of the these div tags contain the HTML for the information of the content of the website.-->
+<!--These div tags are all styled separately in the About_Page.css file.-->
+<!--Inside the div tags there are strong tags which serve the purpose of giving the text placed within the strong tags a strong emphasis.-->
+
+    <div class="box-area">
+        <div class="single-box">
+            <div class="img-area"></div>
+            <div class="img-text">
+                <span class="header-text"><strong>Databases</strong></span>
+                <p>
+                    Our custom databases gives you access to sequencing data from sequences of individuals infected with SARS-CoV-2 .
+                    Our virus database has information on accession numbers, virus strain ID and country of origin for each sequencne. We have also
+                    included data on the collection date for each sequence in our database and whether the strain contains a specific variant or not, this information can all be accessed from our Databases page.
+                    We also have a protein database with information on protein structures of SARS-CoV-2.                         
+                </p>
+            </div>
+        </div>
+
+        <div class="single-box">
+            <div class="img-area"></div>
+            <div class="img-text">
+                <span class="header-text"><strong>Interactive Visualisations</strong></span>
+                <p>
+                    Our Protein Viewer page contains 7 3D structures of proteins according to the referecne sequence of SARS-CoV-2 .
+                    These 3D structures are interactive giving you complete control over selecting different features, colouring residues of interest and other 
+                    details you may be interested in. Each one has it's own link taking you directly to the page with the relavent sequence information. Other visualisations include
+                    that of the Spike glycoprotein 6VYB which can be accessed from the D614G Variant page.
+                </p>
+            </div>
+        </div>
+
+        <div class="single-box">
+            <div class="img-area"></div>
+            <div class="img-text">
+                <span class="header-text"><strong>Extra Information</strong></span>
+                <p>
+                    Their is a plethora of information avaliable on SARS-CoV-2 and COVID-19 which is the disease that the virus causes. Our job is to give you insight 
+                    into what the latest findings are and allow you to explore these for yourself in an interactive manner. This is a novel coronavirus that 
+                    we haven't encountered before, there are always new findings and breakthroughs which help us understand this complex virus further, therefore it is 
+                    important for everyone to understand what this virus is and the underlying science behind it.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

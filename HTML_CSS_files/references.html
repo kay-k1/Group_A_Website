@@ -1,0 +1,87 @@
+<!--The HTML on this page is all the HTML for the Information Sources page of the website.-->
+
+<!--The first part of the skeleton of the HTML is the head, within the head tags are the title of the web page and the links to the corresponding CSS pages for styling the web page.-->
+<!--The viewport meta tag is used to control layout on mobile browsers.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="references.css">
+    <link rel="stylesheet" href="navigation_bar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<!--Inside the body tags is the all the HTML for the navigation menu and links to external resources.-->  
+<!--The nav tags are for the navigation menu which is placed at the top of the web page.-->
+<!--Inside the nav tags are the li tags representing the items in the list.-->
+<!--Inside the li tags are the a tags so that when users of the website click About for e.g. they will be directed to About_Page.html which is the HTML web page for the About page of the website.-->
+<!--In this HTML web page the li tag containing Information Sources is given class="active" in the a tag, this is styled in navigation_bar.css and is for Information Sources to remain highlighted so that users know that they are currently on the Information Sources page.-->
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About_Page.html">About</a></li>
+            <li><a href="Statistics.html">Statistics</a></li>
+            <li><a href="Databases.html">Databases</a></li>
+            <li><a href="Variant.html">D614G Variant</a></li>
+            <li><a href="sequence.html">Sequence Viewer</a></li>
+            <li><a href="protein.html">Protein Viewer</a></li>
+            <li><a class="active" href="references.html">Information Sources</a></li>
+        </ul>
+  </nav>
+
+<!--The h2 tag acts as the header of the web page-->
+
+<h2>Where do we get our information from?</h2>
+
+<!--A div tag with the class all is created containing other div tags and other HTML tags.-->
+<!--The h1 tags act as the subheadings categorising the links into subsections.-->
+<!--The a tags provide the URLs to the external resources links so that when the user clicks on a URL link they are directed to the URL they clicked on.-->
+<!--In the a tags target="_blank" is set so that when the user clicks on a link, the link is opened in a new tab and not the current tab.-->
+
+<div class="all">
+    <div class="source">
+        <i class="fa fa-database" style="font-size:150px;color:lightskyblue"></i>
+        <h1>Databases</h1>
+        <p>
+            <a href="https://www.mysql.com/" target="_blank">https://www.mysql.com/</a><br>
+            <a href="https://www.phpmyadmin.net/" target="_blank">https://www.phpmyadmin.net/</a>
+            <a href="https://www.python.org/" target="_blank">https://www.python.org/</a>
+            <a href="https://biopython.org/" target="_blank">https://biopython.org/</a>     
+	    </p>    
+    </div>
+
+    <div class="source">
+        <i class="fa fa-line-chart" style="font-size:150px;color:purple"></i>
+        <h1>Statistics</h1>
+        <p> <a href="https://ourworldindata.org/" target="_blank">https://ourworldindata.org/</a> </p>    
+    </div>
+    
+    <div class="source">
+        <i class='fas fa-dna' style='font-size:150px;color:red'></i>
+        <h1>Sequences</h1>
+        <p><a href="https://www.ncbi.nlm.nih.gov/sars-cov-2/" target=”_blank”>https://www.ncbi.nlm.nih.gov/sars-cov-2/</a></p>    
+    </div>
+    
+    <div class="source">
+        <span class="iconify" data-icon="simple-icons:moleculer"  style="font-size:150px;color:orange"></span>
+        <h1>Structures and Visualisations</h1>
+        <p><a href="https://www.ncbi.nlm.nih.gov/Structure/icn3d/icn3d.html" target=”_blank”>https://www.ncbi.nlm.nih.gov/Structure/<br>icn3d/icn3d.html</a>
+            <a href="https://www.rcsb.org/" target="_blank">https://www.rcsb.org/</a>   
+            <a href="https://www.ncbi.nlm.nih.gov/tools/sviewer/" target="_blank">https://www.ncbi.nlm.nih.gov/tools/sviewer/</a>   
+            <a href="https://github.com/calipho-sib/feature-viewer" target="_blank">https://github.com/calipho-sib/feature-viewer</a> 
+        </p>    
+    </div>
+    
+
+</div>
+  
+</body>
+</html>

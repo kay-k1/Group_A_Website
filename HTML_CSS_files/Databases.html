@@ -1,0 +1,52 @@
+<!--The HTML on this page is all the HTML for the Databases page of the website.-->
+
+<!--The first part of the skeleton of the HTML is the head, within the head tags are the title of the web page and the links to the corresponding CSS pages for styling the web page.-->
+<!--The viewport meta tag is used to control layout on mobile browsers.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Databases</title>
+    <link rel="stylesheet" href="Databases.css">
+    <link rel="stylesheet" href="navigation_bar.css">
+</head>
+
+<!--Inside the body tags is the all the HTML for the navigation menu and the links directing users to the Virus and Protein databases.-->  
+<!--The nav tags are for the navigation menu which is placed at the top of the web page.-->
+<!--Inside the nav tags are the li tags representing the items in the list.-->
+<!--Inside the li tags are the a tags so that when users of the website click About for e.g. they will be directed to About_Page.html which is the HTML web page for the About page of the website.-->
+<!--In this HTML web page the li tag containing Databases is given class="active" in the a tag, this is styled in navigation_bar.css and is for Databases to remain highlighted so that users know that they are currently on the Databases page.-->
+
+<body>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About_Page.html">About</a></li>
+          <li><a href="Statistics.html">Statistics</a></li>
+          <li><a class="active" href="Databases.html">Databases</a></li>
+          <li><a href="Variant.html">D614G Variant</a></li>
+          <li><a href="sequence.html">Sequence Viewer</a></li>
+          <li><a href="protein.html">Protein Viewer</a></li>
+          <li><a href="references.html">Information Sources</a></li>
+        </ul>
+  </nav>
+
+<!--The h1 tag acts as the header of the web page.-->
+<!--The h3 tag contains a description of what the Databases page is and tells the users what the links below direct them to.-->
+
+  <h1>SARS-CoV-2 Databases</h1>
+
+  <h3>Below are direct links to our <br> Virus and Protein Databases for SARS-CoV-2.</h3>
+
+<!--A div tag with the class button-container is created, this div tag contains a tags and button tags.-->
+<!--The a tags contain the URL of where the database table pages are located and the button tags display buttons on the webpage for the user to click and be directed to the database table page for the database they have clicked on.-->
+
+  <div class="button-container">
+    <a href="/connect_virus_database_kk_2.php" target='_blank'><button class="btn btn1">Virus Database</button></a>
+    <a href="/connect_protein_database_kk.php" target='_blank'><button class="btn btn2">Protein Database</button></a>     
+  </div>
+  
+</body>
+</html>

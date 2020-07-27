@@ -1,0 +1,37 @@
+ <!--This webpage aims to show the the annotated reference sequence NC_045512 using the tool (NCBI Graphical Sequence Viewer 3.38) from NCBI , the main code for sequence viewer is embedded from NCBI -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head> 
+    <title>sequence viewer</title>
+    <!--the css file to build the bar and webpage structure -->
+    <link rel="stylesheet" href="navigation_bar.css"> 
+    <link rel="stylesheet" href="sequence.css">
+
+</head>
+
+<body>
+   <nav>
+  <!--the link bar,link to other webpages in this group project--> 
+        <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="About_Page.html">About</a></li>
+  <li><a href="Statistics.html">Statistics</a></li>
+  <li><a href="Databases.html">Databases</a></li>
+  <li><a href="Variant.html">D614G Variant</a></li>
+  <li><a class='active' href="sequence.html">Sequence Viewer</a></li>
+  <li><a href="protein.html">Protein Viewer</a></li>
+  <li><a href="references.html">Information Sources</a></li>
+  </ul>
+  </nav>
+
+ <div>
+          <!--add the title and description -->
+            <strong><div id="title" >The sequence viewer below shows the annotated reference sequence NC_045512 </div></strong>
+           <!--embed the code from NCBI,select the NC_045512 as the reference sequence -->
+           <script type="text/javascript" src="https://www.ncbi.nlm.nih.gov/projects/sviewer/js/sviewer.js"></script>
+           <div id="sviewer_xfbvv" class="SeqViewerApp" data-autoload>
+           <a href="?embedded=true&id=NC_045512&tracks=[key:sequence_track,name:Sequence,display_name:Sequence,id:STD649220238,annots:Sequence,ShowLabel:false,ColorGaps:false,shown:true,order:1][key:gene_model_track,name:Genes,display_name:Genes,id:STD3194982005,annots:Unnamed,Options:ShowAllButGenes,CDSProductFeats:true,NtRuler:true,AaRuler:true,HighlightMode:2,ShowLabel:true,shown:true,order:9]&assm_context=GCF_009858895.2&v=1:29903&c=null&select=null&slim=0&appname=no_appname"></a>
+   </div>
+</body>
+</html>
