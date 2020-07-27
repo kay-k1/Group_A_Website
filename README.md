@@ -3,4 +3,4 @@
 Group B
 
 This project is on designing a website with databases and information on the SARS-COV-2 pandemic. All the HTML,CSS files, PHP scripts and images used for 
-designing and developing the website are included. Also the python scripts that were used for extracting information for the databases are included.
+designing and developing the website are included. Python scripts that were used for extracting information for the databases are also included.
