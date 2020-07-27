@@ -5,7 +5,7 @@ import re
 import requests
 #finding an existing file in a directory: https://www.csestack.org/python-check-if-file-directory-exists/
 #deleting existing files: https://www.dummies.com/programming/python/how-to-delete-a-file-in-python/
-#if (os.path.exists("output.txt")): os.remove("output.txt")
+if (os.path.exists("output.txt")): os.remove("output.txt")
 protein_out = open("protein_output.txt", "a")
 link_db_out= open("link_db_output.txt", "a")
 virus_out=open("virus_output.txt","a")
@@ -37,15 +37,14 @@ for f in files:
     
                 #get the PDB tag
                 #downloading files using python:https://likegeeks.com/downloading-files-using-python/ 
-                #url = ("https://www.ncbi.nlm.nih.gov/protein/" + protId)
-                #r = requests.get(url, allow_redirects=True)
-                #cont = r.content
-                #cont = cont.decode("utf-8")
-                #if (re.search(r"PDB: \w{4}", cont)):
-                #    match = re.search(r"PDB: \w{4}", cont)
-                #    PDBtag = (match.group())[5:9]
-                #else: PDBtag = "null"
-                PDBtag = "null"
+                url = ("https://www.ncbi.nlm.nih.gov/protein/" + protId)
+                r = requests.get(url, allow_redirects=True)
+                cont = r.content
+                cont = cont.decode("utf-8")
+                if (re.search(r"PDB: \w{4}", cont)):
+                    match = re.search(r"PDB: \w{4}", cont)
+                    PDBtag = (match.group())[5:9]
+                else: PDBtag = "null"
 
                 #get the amino acid sequence
                 if (re.search(r"translation, Value: \W{2}\w{1,10000}", str(feature))):
